@@ -3,7 +3,7 @@ import { /* Switch, Route,  */Link } from 'react-router-dom';
 import { Layout, Typography, Space } from 'antd';
 
 import { Navbar, Exchanges, Homepage, Cryptocurrencies, News, CryptoDetails, NoPage/* , Layout, Footer */ } from './components';
-import './App.css';
+//  import './App.css';
 
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -55,7 +55,6 @@ export default function App() {
 
 
 ReactDOM.render(<App />, document.getElementById("root"));
-
 
 
 
