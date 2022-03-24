@@ -19,13 +19,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 export default function App() {
   return (
 
-        <div className="app">
-          <div className="navbar">
-            
-          </div>
-          <div className="main">
 
-          <div className="routes">
         
           <BrowserRouter>
             <Routes>
@@ -41,13 +35,7 @@ export default function App() {
             </Routes>
           </BrowserRouter>
 
-          </div>
-        
-</div>
-      <div className="footer">
-        
-      </div>
-    </div>
+
 
   );
 }
@@ -55,8 +43,6 @@ export default function App() {
 
 
 ReactDOM.render(<App />, document.getElementById("root"));
-
-
 
 
 
