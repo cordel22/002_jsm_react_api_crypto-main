@@ -15,10 +15,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 
-
 export default function App() {
   return (
-
 
         
           <BrowserRouter>
@@ -35,7 +33,7 @@ export default function App() {
             </Routes>
           </BrowserRouter>
 
-
+ 
 
   );
 }
@@ -44,6 +42,54 @@ export default function App() {
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
+
+
+
+
+
+/* funguje css ale nevidno obsah stranky...
+
+export default function App() {
+  return (
+
+        <div className="app">
+          <div className="navbar">
+            
+          </div>
+          <div className="main">
+
+          <div className="routes">
+        
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Navbar />}>
+                <Route index element={<Homepage />} />
+                <Route path="/exchanges" element={<Exchanges />} />
+                <Route path="/cryptocurrencies" element={<Cryptocurrencies />} />
+                <Route path="/crypto/:coinId" element={<CryptoDetails />} />
+                <Route path="/news" element={<News />} />
+                <Route path="*" element={<NoPage />} />
+                
+              </Route>
+            </Routes>
+          </BrowserRouter>
+
+          </div>
+        
+</div>
+      <div className="footer">
+        
+      </div>
+    </div>
+
+  );
+}
+
+
+
+ReactDOM.render(<App />, document.getElementById("root"));
+
+ */
 
 
 
