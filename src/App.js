@@ -1,6 +1,6 @@
 import React from 'react';
-// import { Switch, Route, Link } from 'react-router-dom';
-//  import { Layout, Typography, Space } from 'antd';
+import { /* Switch, Route,  */Link } from 'react-router-dom';
+import { Layout, Typography, Space } from 'antd';
 
 import { Navbar, Exchanges, Homepage, Cryptocurrencies, News, CryptoDetails, NoPage/* , Layout, Footer */ } from './components';
 import './App.css';
@@ -45,7 +45,7 @@ export default function App() {
         
 </div>
       <div className="footer">
-
+        
       </div>
     </div>
 
@@ -55,6 +55,9 @@ export default function App() {
 
 
 ReactDOM.render(<App />, document.getElementById("root"));
+
+
+
 
 
 
@@ -93,7 +96,15 @@ ReactDOM.render(<App />, document.getElementById("root"));
 
       </div>
       <div className="footer">
-
+        <Typography.Title level={5} style={{ color: 'white', textAlign: 'center'}}>
+          Cryptoverse <br />
+          All rights reserved
+        </Typography.Title>
+        <Space>
+          <Link to="/">Home</Link>
+          <Link to="/exchanges">Exchanges</Link>
+          <Link to="/news">News</Link>
+        </Space>
       </div>
     </div>
   )
